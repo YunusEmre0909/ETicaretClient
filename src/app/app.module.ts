@@ -4,7 +4,8 @@ import { AdminModule } from './admin/admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UİModule } from './ui̇/ui̇.module';
+import { UiModule } from './ui/ui.module';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UİModule } from './ui̇/ui̇.module';
     BrowserModule,
     AppRoutingModule,
     AdminModule,
-    UİModule
+    UiModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
