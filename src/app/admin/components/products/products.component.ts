@@ -18,10 +18,10 @@ export class ProductsComponent extends BaseComponent implements OnInit {
   ngOnInit(): void {
     this.showSpiner(SpinnerType.BallScaleMultiple);
 
-       this.httpClientService.get<Product[]>({
-        controller:"products"
-        //fullEndPoint:"https://localhost:7283/api/Products"
-       }).subscribe(data=> console.log(data));
+        this.httpClientService.get<Product[]>({
+         controller:"products"
+         //fullEndPoint:"https://localhost:7283/api/Products"
+        }).subscribe(data=> console.log(data));
 
     // this.httpClientService.post({
     //   controller:"products"
@@ -40,7 +40,7 @@ export class ProductsComponent extends BaseComponent implements OnInit {
     //   price:50
     // }).subscribe();
 
-    //  this.httpClientService.delete({
+    //   this.httpClientService.delete({
     //    controller:"products"
     //  },"1ecd0b2d-7b8e-455c-9779-08db191da4e4").subscribe();
    }
